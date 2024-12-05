@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/odin-lined.png" type="image/png">
+</head>
+<body>
+    <main>
+        <section class="left-container">
+                <div class="logo">
+                <a href="https://www.theodinproject.com" target="_blank ">
+                <img src="img/odin-lined.png" alt="logo" class="logo_image"></a>
+                <h1>ODIN</h1>
+            </div>
+        </section>
+        <section class="right-container">
+            <div class="right-text">
+                <h2>Sign now to get started!</h2>
+            </div>
+            <h3>Let`s do this!</h3>
+            <div class="form-div">
+                <form action="" class="form-body" id="register-form">
+                    <div class="form-input">
+                        <label for="first_name">First Name</label>
+                        <input required type="text" id="first_name" autocomplete="given-name" placeholder=" ">
+                    </div>
+                    <div class="form-input">
+                        <label for="last_name">Last Name</label>
+                        <input required type="text" id="last_name" autocomplete="family-name" placeholder=" ">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">E-Mail</label>
+                        <input required type="email" id="email" autocomplete="email" placeholder=" ">
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone</label>
+                        <input required 
+                        type="tel" 
+                        id="phone" 
+                        autocomplete="tel" 
+                        pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" 
+                        placeholder=" "
+                        oninvalid="this.setCustomValidity('Please use (123)-123-1234 or 123-123-1234')"
+                        oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-input">
+                        <label for="password">Pasword</label>
+                        <input required type="password" id="password" autocomplete="new-password" placeholder=" ">
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input  required type="password" id="confirm_password" autocomplete="new-password" placeholder=" ">
+                    </div>
+                </form>
+            </div>
+            <button type="submit" form="register-form">Rock & Roll</button>
+            <div class="form-footer">
+                <p>If you already have an acount, just <a href="https://www.theodinproject.com">Log In</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
